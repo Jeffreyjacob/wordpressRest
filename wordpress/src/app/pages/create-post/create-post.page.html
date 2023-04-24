@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-title>createPost</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-label position="floating">Post Title</ion-label>
+      <ion-input type="text" [(ngModel)]="title"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Post Content</ion-label>
+      <ion-input type="text" [(ngModel)]="Content"></ion-input>
+    </ion-item>
+    <ion-button color="success" (click)="onAddPost()">Add Post</ion-button>
+  </ion-card>
+ 
+</ion-content>
